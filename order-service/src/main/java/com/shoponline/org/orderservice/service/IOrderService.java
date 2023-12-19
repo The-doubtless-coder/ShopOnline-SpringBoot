@@ -4,5 +4,5 @@ import com.shoponline.org.orderservice.dtos.OrderRequestDTO;
 import com.shoponline.org.orderservice.exceptions.ProductNotInStockException;
 
 public interface IOrderService {
-    public void CreateOrder(OrderRequestDTO orderRequestDTO) throws ProductNotInStockException;
+    public void CreateOrder(OrderRequestDTO orderRequestDTO) throws Exception;
 }

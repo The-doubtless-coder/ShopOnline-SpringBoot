@@ -55,6 +55,7 @@
 		<module>inventory-service</module>
 		<module>notification-service</module>
 		<module>discovery-service</module>
+		<module>api-gateway-service</module>
 	</modules>
 
 	<build>

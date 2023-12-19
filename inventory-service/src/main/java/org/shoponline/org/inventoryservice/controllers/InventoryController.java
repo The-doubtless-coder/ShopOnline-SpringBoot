@@ -20,7 +20,7 @@ private final IInventoryService iInventoryService;
 
     @GetMapping
     @ResponseStatus(value = HttpStatus.OK, code = HttpStatus.OK)
-    public List<InventoryResponse> IsInStock(@RequestParam List<String> skuCode){
+    public List<InventoryResponse> IsInStock(@RequestParam(name = "skuCode") List<String> skuCode){
         try {
         return iInventoryService.StillInStock(skuCode);
         } catch (ProductNotAvailableEx ex) {

@@ -8,4 +8,5 @@ import java.util.List;
 public interface IInventoryService {
 
     public List<InventoryResponse> StillInStock(List<String> skuCode) throws Exception;
+
 }
